@@ -60,7 +60,7 @@ function round(){
             }
             break;
         /*when you choices paper end */
-        
+
         /*when you choices scissors start*/
         case "scissors":
             switch(computerChoices.toLowerCase())
@@ -85,11 +85,32 @@ function round(){
     
     
 }
-console.log(round());
-console.log(playerScore);
-console.log(computerScore);
+
 
 /* decide how many rounds, final winner, count number of win */
 function manyRounds(){
-
+    let numberOfRounds = Number(prompt("How many rounds you want ?"))
+    for(i = 1; i <= numberOfRounds;i = i + 1)
+    {
+        console.log(`round ${i}`);
+        console.log(round());
+        console.log(`your score is ${playerScore}, computer score is ${computerScore}`);
+    }
+    if(computerScore === playerScore)
+    {
+        console.log("you all win");
+    }
+    else
+    {
+        if(playerScore > computerScore)
+        {
+            console.log("you win")
+        }
+        else
+        {
+            console.log("you lose")
+        }
+    }
 }
+
+manyRounds();
