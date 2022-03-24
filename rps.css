@@ -104,11 +104,27 @@ header {
 #player_choice {
     width: 50%;
     background-color: #ffd900;
+    display: flex;
+    align-items: center;
+}
+
+#player_choice img {
+    height: 50%;
+    display: block;
+    margin: auto;
 }
 
 #computer_choice {
     width: 50%;
     background-color: #aa00ff;
+    display: flex;
+    align-items: center;
+}
+
+#computer_choice img{
+    height: 50%;
+    display: block;
+    margin: auto;
 }
 
 /* main area end */
