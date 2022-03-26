@@ -1,3 +1,17 @@
+function sayhi(){
+    console.log("hi");
+}
+
+const abc = document.querySelectorAll('button');
+abc.forEach((button) => {
+    button.addEventListener('click',() => {
+        alert("hi");
+    });
+});
+
+
+
+
 /* computer random choices */
 
 const choices = ["Rock", "Paper", "Scissors"]

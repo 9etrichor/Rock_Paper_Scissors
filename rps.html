@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="rps.css" type="text/css">
-    <script src="rps.js"></script>
+    <script src="rps_test.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock_Paper_Scissors</title>
 </head>
@@ -21,13 +21,13 @@
 
     <div id="info_area"> <!--second area, all align vertically, space between-->
         <p id="player_score">
-            1
+            0
         </p>
         <p id="single_game">
             you win / you lose
         </p>
         <p id="computer_score">
-            4
+            0
         </p>
     </div>
 
@@ -42,9 +42,9 @@
     </div>
 
     <div id="button_choices"> <!--3 buttons are vertical align-->
-        <button name="player" type="submit" value="rock" id="button_one"><img src="img_pack\rock.png"></button>
-        <button name="player" type="submit" value="paper" id="button_two"><img src="img_pack\Paper.png"></button>
-        <button name="player" type="submit" value="scissors" id="button_three"><img src="img_pack/scissors_new.png"></button>
+        <button class="btn" id="btnRock" name="player" type="submit" value="rock"><img src="img_pack\rock.png"></button>
+        <button class="btn" id="btnPaper" name="player" type="submit" value="paper"><img src="img_pack\Paper.png"></button>
+        <button class="btn" id="btnSci" name="player" type="submit" value="scissors"><img src="img_pack/scissors_new.png"></button>
     </div>
 </div>
 </body>
