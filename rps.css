@@ -50,7 +50,7 @@ header {
 
 #info_area {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 10%;
     align-items: center;
     background-color: #000000;
@@ -77,6 +77,8 @@ header {
     font-size: 2rem;
     font-style: none; 
     color: #ffffff;
+    width: 30%;
+    text-align: center;
 }
 
 #computer_score{

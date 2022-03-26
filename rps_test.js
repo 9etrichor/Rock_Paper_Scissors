@@ -9,8 +9,10 @@ const btnPaper = document.getElementById('btnPaper');
 const btnSci = document.getElementById('btnSci');
 /*get three button element */
 
+/*get player and computer side img start */
 const playerImg = document.getElementById("playerimg");
 const computerImg = document.getElementById("computerimg");
+/*get player and computer side img end */
 
 /*computer make choice start */
 const choices = ["rock", "paper", "scissors"]
@@ -81,6 +83,12 @@ function singleRound()
 };
 /*play a round end */
 
+/* get element that output information element start*/
+const pScore = document.getElementById('player_score');
+const cScore = document.getElementById('computer_score');
+const aRoundInfo = document.getElementById('single_game');
+/* get element that output information element end*/
+
 /* output correct image when computer make choice start */
 function computerImage()
 {
@@ -109,6 +117,9 @@ btnRock.addEventListener('click', function(){
     computerImg.src = computerImage();
     outputStr = singleRound();
     console.log(outputStr + playerScore);
+    pScore.innerHTML = playerScore;
+    cScore.textContent = computerScore;
+    aRoundInfo.textContent = outputStr; 
 });
 /* player click and choice rock end */
 
@@ -122,6 +133,9 @@ btnPaper.addEventListener('click', function(){
     computerImg.src = computerImage();
     outputStr = singleRound();
     console.log(outputStr + playerScore);
+    pScore.innerHTML = playerScore;
+    cScore.textContent = computerScore;
+    aRoundInfo.textContent = outputStr; 
 });
 /* player click and choice paper end */
 
@@ -134,6 +148,9 @@ btnSci.addEventListener('click', function(){
     computerImg.src = computerImage();
     outputStr = singleRound();
     console.log(outputStr + playerScore);
+    pScore.innerHTML = playerScore;
+    cScore.textContent = computerScore;
+    aRoundInfo.textContent = outputStr; 
 });
 /* player click and choice scissors end */
 /*player click button to make choice end*/
