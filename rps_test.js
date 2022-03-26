@@ -1,7 +1,8 @@
-let playerChoice = "scissors";
+let playerChoice = "paper";
 let computerChoice = "";
 let playerScore = 0;
 let computerScore = 0;
+let outputStr = "";
 const btnRock = document.getElementById('btnRock');
 const btnPaper = document.getElementById('btnPaper');
 const btnSci = document.getElementById('btnSci');
@@ -74,3 +75,24 @@ function singleRound()
 };
 /*play a round end */
 
+btnRock.addEventListener('click', function(){
+    playerChoice = "rock";
+    computerChoice = computer();
+    outputStr = singleRound();
+    console.log(outputStr + playerScore);
+});
+
+btnPaper.addEventListener('click', function(){
+    playerChoice = "paper";
+    computerChoice = computer();
+    outputStr = singleRound();
+    console.log(outputStr + playerScore);
+});
+
+btnSci.addEventListener('click', function(){
+    playerChoice = "scissors";
+    computerChoice = computer();
+    outputStr = singleRound();
+    console.log(outputStr + playerScore);
+});
+console.log(playerScore);
